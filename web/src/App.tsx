@@ -1,5 +1,6 @@
 import './styles/main.css';
 import logoImg from './assets/logo-nlw-esports.svg';
+import { MagnifyingGlassPlus } from 'phosphor-react';
 function App() {
  return (
     <div className='max-w-[1344px] mx-auto flex flex-col items-center my-20'>
@@ -65,7 +66,8 @@ function App() {
                     <strong className='text-2xl text-white font-black block'> Nao Encontrou Seu Duo ?? </strong>
                     <span className='text-zinc-400 block'> Publique Um Anúncio Para Encontrar Novos Players !! </span>
                 </div>
-                <button className='py-3 px-4 bg-violet-500 text-white rounded'>
+                <button className='py-3 px-4 bg-violet-500 hover:bg-violet-700 text-white rounded flex items-center gap-2'>
+                    <MagnifyingGlassPlus size={24}/>
                     Publicar Anúncio
                 </button>
             </div>
