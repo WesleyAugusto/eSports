@@ -1,26 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { Background } from './src/components/Background';
+import { StatusBar } from 'react-native';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}> Ladrao de  frango</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Background>
+    <StatusBar
+
+    barStyle="light-content" 
+    backgroundColor= "transparente"
+    translucent
+
+    />
+    </Background>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#af1414',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title:{
-    color:'black',
-    fontSize: 99,
-    fontWeight: 'bold',
-    textAlign: 'center',
-  }
-});
